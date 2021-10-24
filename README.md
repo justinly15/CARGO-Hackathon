@@ -12,4 +12,4 @@ The aim of our program is to provide a more individualistic view of the relation
 Sources:
 - https://storage.googleapis.com/scsc/Green%20Freight/EDF-Green-Freight-Handbook.pdf
 - https://thepep.unece.org/sites/default/files/2017-06/Info_CO2_Methodological_Guide.pdf
-- https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3835347/
+- https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3835347/ 
