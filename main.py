@@ -24,17 +24,6 @@ if __name__ == '__main__':
     print(str(emissions) + 'g of carbon emissions created')
 
     # if we want to present multiple emissions-types to user at once
-    # air_emissions = calculate_emissions(dist, mode, mass)
-    # ground_emissions = calculate_emissions(dist, mode, mass)
-    # rail_emissions = calculate_emissions(dist, mode, mass)
-    #
-    # TODO:
-    #     0) (DONE) Use accurate data for calculations
-    #     1) Pass air_emissions and ground_emissions to GUI for presentation to user
-    #     2) Integrate GUI input with program so that user-specified input is used
-    #           a) The program allows for no mass to be specified, in which case it defaults
-    #               to 1kg. Frontend can determine whether you want to use it or not.
-    #     3) Create documentation (basic README about why we made the tool, what it does,
-    #        who it helps, etc.). We can maybe present this README on the site?
-    #     4) (if we have time) Creative representation of carbon emissions on webpage
-    #
+    # air_emissions = calculate_emissions(dist, 'air', mass)
+    # ground_emissions = calculate_emissions(dist, 'ground', mass)
+    # rail_emissions = calculate_emissions(dist, 'rail', mass)
