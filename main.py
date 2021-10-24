@@ -21,7 +21,7 @@ if __name__ == '__main__':
     ground_emissions = calculate_emissions(dist, 'ground', mass)
     print(air_emissions)
     # TODO:
-    #     0) Use more accurate data for calculations
+    #     0) Use accurate data for calculations
     #     1) Pass air_emissions and ground_emissions to GUI for presentation to user
     #     2) Integrate GUI input with program so that user-specified input is used
     #     3) Create documentation (basic README about why we made the tool, what it does,
