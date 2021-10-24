@@ -15,8 +15,11 @@ def calculate_distance(origin, destination):
     originString = f'{origin}'
     destString = f'{destination}'
 
-    querystring = {"route": "[{\"t\":\"Boston\"}, {\"t\":\"Providence\"}]", "car": "false", "foot": "false"}
-    querystring['route'] = '[{\"t\":\"' + originString + '\"}, {\"t\":\"' + destString + '\"}]'
+    # API requires that querystring is in this dictionary format, which makes it hard to modify the
+    # origin and destination dynamically... I used f-strings to make it work, but it could almost
+    # certainly be improved.
+    querystring = {"route": "[{\"t\":\"Boston\"}, {\"t\":\"Providence\"}]", "car": "false", "foot": "false",
+                   'route': '[{\"t\":\"' + originString + '\"}, {\"t\":\"' + destString + '\"}]'}
 
     # Make API call and store response
     response = requests.request("GET", url, headers=headers, params=querystring)
