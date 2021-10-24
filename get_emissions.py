@@ -1,8 +1,15 @@
 def calculate_emissions(distance, mode, mass):
     if mode == 'air':
-        emissions_rate = 2
+        #1.404g/kg*km
+        emissions_rate = 1.404
     else:
-        emissions_rate = 1
+        # 1.650g/kg*km with 1.417 scalar for detour index
+        # (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3835347/)
+        # 1.164 without
+        emissions_rate = 1.65
 
-    # kg CO2/product = km * kg C02/km * kg/product
-    return int(distance) * int(emissions_rate) * int(mass)
+    # g CO2/product = km * g C02/km * kg * kg/product
+    result = distance * emissions_rate * mass
+    # accurate to 2 decimal places
+    formatted_result = "{:.2f}".format(result)
+    return formatted_result

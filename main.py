@@ -19,10 +19,11 @@ if __name__ == '__main__':
     dist = calculate_distance(origin, destination)
     air_emissions = calculate_emissions(dist, 'air', mass)
     ground_emissions = calculate_emissions(dist, 'ground', mass)
+
     print(str(air_emissions) + 'kg of carbon emissions created')
     #
     # TODO:
-    #     0) Use accurate data for calculations
+    #     0) (DONE) Use accurate data for calculations
     #     1) Pass air_emissions and ground_emissions to GUI for presentation to user
     #     2) Integrate GUI input with program so that user-specified input is used
     #           a) The program allows for no mass to be specified, in which case it defaults
