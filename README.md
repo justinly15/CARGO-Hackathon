@@ -1,4 +1,4 @@
-# 2021 Cargo Hackathon Technical Solution
+# 2021 CARGO Hackathon Technical Solution
 
 Our submission for the hackathon is an applet that calculates the C02 emissions for a user's specific consumption. C02 is the most prevalent greenhouse gas and accounts for >95% of the transportation industry's impact on climate change.
 By allowing a user to input the origin and destination of a product along with its mass, our program is able to give the C02 emissions produced by the transportation of that good in a variety of modes-- namely, air, ground, and rail transport.
