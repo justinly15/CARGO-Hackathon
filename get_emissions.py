@@ -3,4 +3,7 @@ def calculate_emissions(distance, mode, mass):
         emissions_rate = 1
     else:
         emissions_rate = 1
-    return distance * emissions_rate * mass
+    # kg CO2/product = km * kg C02/km * kg/product
+    result = int(distance) * int(emissions_rate) * int(mass)
+    result = str(result)
+    return result + 'kg'
