@@ -28,3 +28,4 @@ def calculate_distance(origin, destination):
     # split response string to return only the info we care about (haversine distance)
     result = response.find('haversine')
     return float(response[result + 11:result + 17])
+

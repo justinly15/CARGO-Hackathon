@@ -21,7 +21,6 @@ if __name__ == '__main__':
     # C02 emissions based on mode of transport
     dist = calculate_distance(origin, destination)
     emissions = calculate_emissions(dist, mode, mass)
-
     print(str(emissions) + 'g of carbon emissions created')
 
     # if we want to present multiple emissions-types to user at once
