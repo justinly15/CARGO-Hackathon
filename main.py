@@ -2,6 +2,7 @@ import sys
 
 from get_distance import calculate_distance
 from get_emissions import calculate_emissions
+import call_emission
 
 url = "https://distanceto.p.rapidapi.com/get"
 
@@ -16,14 +17,11 @@ if len(sys.argv) == 5:
 else:
     mass = 1
 
+#func111 provides origin, dest, mode, mass
+
 if __name__ == '__main__':
     # call on helper functions to compute distance between origin and destination and to calculate
     # C02 emissions based on mode of transport
     dist = calculate_distance(origin, destination)
     emissions = calculate_emissions(dist, mode, mass)
     print(str(emissions) + 'g of carbon emissions created')
-
-    # if we want to present multiple emissions-types to user at once
-    # air_emissions = calculate_emissions(dist, 'air', mass)
-    # ground_emissions = calculate_emissions(dist, 'ground', mass)
-    # rail_emissions = calculate_emissions(dist, 'rail', mass)
