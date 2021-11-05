@@ -9,14 +9,13 @@ class MyMainForm(QMainWindow, Ui_MainWindow):
     def __init__(self, parent=None):
         super(MyMainForm, self).__init__(parent)
         self.setupUi(self)
-        # add 
+        # add signal slot
         self.pushButton.clicked.connect(self.display)
-        # 添加退出按钮信号和槽。调用close函数
         # self.buttonBox.clicked.connect(self.close)
 
     def display(self):
    
-        # read text from textEdit controls
+        # read text from textEdit widgets
         origin_text = self.textEdit_origin.toPlainText()
         dest_text = self.textEdit_dest.toPlainText()
         mass_text = self.textEdit_mass.toPlainText()
@@ -26,7 +25,7 @@ class MyMainForm(QMainWindow, Ui_MainWindow):
         dist = calculate_distance(origin_text, dest_text)
         emission_text = calculate_emissions(dist, mode_text, mass_text)
         
-        # display text using text Browser controls' object setText()
+        # display text using textBrowser widget's object setText()
         self.textBrowser_emission.setText(emission_text)
 
 if __name__ == "__main__":
